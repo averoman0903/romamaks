@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>Страница бронирования</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<header>
+		<div class="logo"></div>
+		<nav>
+			<ul>
+				<li><a href="index.html">Главная</a></li>
+			</ul>
+		</nav>
+	</header>
+
+
+
+	<main class="contento">
+		<h2>Завершение бронирования</h2>
+		<form>
+			<fieldset>
+				<legend>Данные о заказе</legend>
+				<label for="location_field">Регион</label>
+				<input type="text" id="location_field" name="location" value="Алтайский край" disabled>
+
+				<label for="adress_field">Адрес</label>
+				<input type="text" id="adress_field" name="adress" value="Туристическая база &#171;Озеро Красилово&#187;, Косихинский район, с. Озеро-Красилово, ул. Пушкина д.1" disabled>
+
+				<label for="zone_field">Выбранные зоны</label>
+				<input type="text" id="zone_field" name="zone" value="Шатер" disabled>
+
+				<label for="date_field">Дата</label>
+				<input type="text" id="date_field" name="date" value="26-09-2021" disabled>
+
+				<label for="time_field">Время</label>
+				<input type="text" id="time_field" name="time" value="17:00" disabled>
+
+				<label for="count_members">Кол-во участников</label>
+				<input type="text" id="count_members" name="members" value="3" disabled>
+
+				<label for="cost_field">Стоимость</label>
+				<input type="text" id="cost_field" name="cost" value="1000 р." disabled>								
+			</fieldset>
+
+			<fieldset>
+				<legend>Выбор до услуг</legend>
+
+				<label for="photo">Услуги фотографа - 2000 р/час</label>
+				<input type="checkbox" id="photo" name="photograf" checked>
+
+				<label for="props_field">Реквизит для съемок   - от 500  р/час</label>
+				<input type="checkbox" id="props_field" name="props" checked>
+
+				<label for="photo_print_field">Моментальная печать фотографий - 30 р/шт</label>
+				<input type="checkbox" id="photo_print_field" name="photo_print" checked>
+
+				<label for="taxi_field">Услуги такси - 50  р + 10 р за каждый км</label>
+				<input type="checkbox" id="taxi_field" name="taxi" checked>
+			</fieldset>
+
+			<label for="comment_field"></label>
+			<input type="textarea" id="comment_field" name="comment" value="#" disabled>
+
+			<label for="email_field"></label>
+			<input type="email" id="email_field" name="email" value="email@mail.ru" disabled>
+
+			<label for="total_cost_field"></label>
+			<input type="text" id="total_cost_field" name="total_cost" value="2500 p." disabled>
+	</main>
+
+
+
+
+	<footer>
+		<div class="copyright">
+			<p>&copy;Mazhukin & Vyadenko </p>
+			<span>Телефон 8(800)333-30-30</span>
+			<div class="footer_navigation">
+				<ul>
+				<li><a href="http://xxxxxx-m1.wsr.ru">Home</a></li>
+					<li><a href="http://xxxxxx-m1.wsr.ru/signup">Sign up</a></li>
+					<li><a href="http://xxxxxx-m1.wsr.ru/contact">contact</a></li>
+					<li><a href="http://xxxxxx-m1.wsr.ru/news">news</a></li>
+					<li><a href="http://xxxxxx-m1.wsr.ru/return">return</a></li>
+					<li><a href="http://xxxxxx-m1.wsr.ru/feedback">feedback</a></li>
+				</ul>
+				
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

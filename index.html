@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Главная</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">	
+</head>
+<body>
+	<!-- Шапка сайта -->
+	<header>
+		<div class="logo"></div>
+		<div class="topnav" id="myTopnav">
+  <a href="#promotions" class="active">Акции</a>
+  <a href="search.html">Поиск</a>
+  <a href="booking.html">Управление бронированием </a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+	</header>
+<script>
+	function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+
+
+	<!-- Основное сожержание -->
+	<main class="content">
+		<!-- Алгоритмы бронирования))))) -->
+		<section class="content__section">
+			<h2>Алгоритм бронирования</h2>
+			<p>Чтобы воспользоваться услугами компании необходимо:</p>
+			<ol>
+				<li>Выбрать дату и время съемки;</li>
+				<li>Выбрать количество участников;</li>
+				<li>Выбрать желаемую локацию для съемки, соответствующую условиям выше;</li>
+				<li>Зарезервировать конкретные зоны на территории выбранной локации;</li>
+				<li>Определить перечень дополнительных услуг;</li>
+				<li>Оформить заказ.</li>
+			</ol> 
+		</section>
+
+		<section class="content__section">
+			<h2>Информация о компании</h2>
+			<p>Главная цель компании – сохранить самые яркие моменты жизни клиентов на долгие годы.</p>
+			<p>Девиз компании «Фокус»: Сделай жизнь ярче!</p>
+			<div class="reviews">
+				<div class="review__item">
+					<h4>Алина</h4>
+					<img src="images/people/7.jpg">
+					<p>Спасибо большое! Локация "Черная жемчужина" просто супер! Все в бурных эмоциях, фото получились просто огонь!</p>
+				</div>
+				<div class="review__item">
+					<h4>Марина</h4>
+					<img src="images/people/2.jpg">
+					  <p>Долго думала как отпразновать годовщину свадьбы. Увидела фото ваших локаций и влюбилась!
+                      Отлично провели время с мужем, сделали кучу фото для инстаграмма и даже распечатали несколько на память)</p>
+				</div>
+				<div class="review__item">
+					<h4>Алёна и Ко</h4>
+					<img src="images/people/10.jpg">
+					  <p>
+
+                       Всё очень понравилось. 
+                       Воспользовались с девочками услугами вашего фотографа Ильи, теперь фотаемся только у него!</p>
+				</div>
+				<div class="review__item">
+					<h4>Наталия</h4>
+					<img src="images/people/8.jpg">
+					   <p>Уже не первый раз устраиваю себе праздник, организуя фотосессию в ваших локациях. Не дорого, а эмоций на весь день</p>
+				</div>
+			</div>
+		</section>
+		<!-- Форма поиска -->
+		<section class="content__section">
+			<h2>Поиск</h2>
+			<form action="search.html" method="post">
+				<label for="location">Выбор региона:</label>
+				<select id="location">
+					<option value="Altajskii_krai">Алтайский край</option>
+					<option value="Krasnoyarskii_krai">Красноярский край</option>
+				</select>
+
+				<label for="date_shot">Дата съёмки:</label>
+				<input type="date" name="date" id="date_shot">
+				<label for="time_shot">Время съёмки</label>
+				<input type="time" name="time" id="time_shot">
+				<label for="count_members">Кол-во участников</label>
+				<input type="number" name="members" id="count_members" min="1" max="5">
+				<button type="submit" class="btn">Поиск</button>
+			</form>
+		</section>
+		<section class="content__section" id="promotions">
+			<h2>Акции</h2>
+			<div class="promotion_item">
+				<img src="images/promotions/promotion1.jpg" alt="Акция1">
+				<h4 class="promotion_item__headline">Headline:
+                 Скидка до 60%. За заказ зоны (до 5 человек) в локации «Черная жемчужина»</h4>
+				<p class="promotion_item__description">Устали от городского шума, хотите провести фотосессию за городом в живописной локации? Заказывайте место в локации «Черная жемчужина». <br>
+				Здесь вас ждет настоящая пиратская шхуна с настоящими пиратами! Фото будут просто огонь!<br>
+				Заказ от 3 до 5 человек:
+				— Скидка 40% на аренду при заказе в будний день<br>
+
+				Заказ от 3 до 5 человек + услуги фотографа:
+				— Скидка 55% на аренду при заказе в будний день<br>
+
+
+				Купон действует в будние дни при наличии свободных мест
+			</p>
+				<button class="promotion_item__button">Подробнее</button>
+			</div>
+			<div class="promotion_item">
+				<img src="images/promotions/promotion2.jpg" alt="Акция2">
+				<h4 class="promotion_item__headline">Скидка до 51% при заказе услуг фотографа и использовании реквизита локации. Уютное место для организации детской фото-видео съемки «Поляна сказок»</h4>
+				<p class="promotion_item__description">Локация «Поляна сказок» расположена в живописной загородной местности на берегу чистого озера. Есть места для организации фотосъемок как на открытом воздухе, так и под навесом с профессиональным оборудованием и реквизитом.
+
+				Купон действует на следующие виды услуг:
+
+				— Скидка 51% для аренды зоны в локации «Поляна сказок» при условии заказа услуг фотографа
+
+				Преимущества заказа именно этой локации:
+				— безопасность (территория локации является частной и охраняется);
+				— мало людей (площадь — 200 кв. м);
+				— защита от насекомых (территория кемпинга обработана от клещей);
+				— обустроенный тематический лагерь, в котором можно сфотографироваться с любимыми персонажами сказок
+
+				Обязательна предварительная запись по телефону.</p>
+				<button class="promotion_item__button">Подробнее</button>
+			</div>
+			<div class="promotion_item">
+				<img src="images/promotions/promotion3.jpg" alt="Акция3">
+				<h4 class="promotion_item__headline">Скидка до 25%. Закажи праздник "Под ключ"</h4>
+				<p class="promotion_item__description">При выборе локации для 5 человек и больше, а также при заказе всех дополнительных услуг можно очень неплохо сэкономить!
+
+
+				Купон действует на следующие виды услуг:
+
+				— Скидка 25% для органицации комплексного праздника для группы от 10 человек.
+				— Скидка 10% для органицации комплексного праздника для группы от 5 человек.
+
+				Обязательна предварительная запись по телефону.</p>
+				<button class="promotion_item__button">Подробнее</button>
+			</div>
+		</section>
+		<!-- Форма подписки на закрытые акции -->
+		<section class="content__section">
+			<h2>Подписка на закрытые акции</h2>
+			<form method="post">
+				<label for="email">Ваш Email:</label>
+				<input type="email" name="e-mail" id="email">
+				<label for="subscription">Подписка:</label>
+				 <input type="checkbox" name="subscription" id="agree">
+				 
+			</form>
+		</section>
+
+	</main>
+
+
+
+	<!-- Подвал сайта -->
+	<footer>
+		<div class="copyright">
+			<p>&copy; Mazhukin & Vyadenko</p>
+			<span>Телефон 8(800)333-30-30</span>
+			<div class="copyright_footer__navigation">
+				<ul>
+					<li><a href="http://xxxxxx-m1.wsr.ru">Home</a></li>
+					<li><a href="http://xxxxxx-m1.wsr.ru/signup">Sign up</a></li>
+					<li><a href="http://xxxxxx-m1.wsr.ru/contact">contact</a></li>
+					<li><a href="http://xxxxxx-m1.wsr.ru/news">news</a></li>
+					<li><a href="http://xxxxxx-m1.wsr.ru/return">return</a></li>
+					<li><a href="http://xxxxxx-m1.wsr.ru/feedback">feedback</a></li>
+				</ul>
+				
+			</div>
+		</div>
+	</footer>
+
+
+
+
+
+
+
+</body>
+</html>
